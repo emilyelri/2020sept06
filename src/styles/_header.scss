@@ -1,0 +1,38 @@
+.header {
+
+    @include flexMix(row, space-between, center);
+
+    background: $primary;
+    color: whitesmoke;
+    width: 100%;
+    height: 75px;
+
+    .left {
+        @include flexMix();
+        img {
+            height: 75px;
+        }
+        div {
+            font-size: 1.4rem;
+            letter-spacing: 3px;
+            margin: 0 20px;
+        }
+    }
+
+    .nav {
+        @include flexMix(row, space-between, center);
+
+        a {
+            color: whitesmoke;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            margin: 0 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    .burger {
+        display: none;
+    }
+}
